@@ -4,6 +4,7 @@ const Container=styled.div`
  background-color: rgb(3, 117, 158);
     margin-top: 0px;
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +20,8 @@ h1{
     height: 550px;
     width: 500px;
     border-radius: 10px;
-    align-items: center;
+    justify-content: center;
+    align-items:center;
     font-family: Arial, Helvetica, sans-serif;
 }
 form{
@@ -27,6 +29,7 @@ form{
     display: flex;
     flex-direction: column;
     width: 400px;
+    
 }
 a{
     text-decoration: none;
@@ -63,7 +66,35 @@ p{
     height: 40px;
     border: none;
 
-}`;
+}
+@media only screen and (max-width:600px) {
+    .content{
+        height:400px;
+        width:240px;
+        padding-top: 0px;
+        margin:auto;
+    }
+    form{
+        width:200px;
+    }
+    .in{
+        width:170px;
+        height: 25px;
+    }
+    h1{
+        margin-top:20px;
+        font-size:30px;
+    }
+    p{
+        font-size: 10px;
+        width:150px;
+        margin-top:20px;
+    }
+}
+
+
+
+`;
 function login() {
   return (
     <Container>
