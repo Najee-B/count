@@ -43,11 +43,15 @@ width: 100%;
   margin-bottom:0px;
   
 }
+a{
+  text-decoration:none;
+  color:white;
+}
  #chk{
   display: none;
 }
 input:checked ~ ul{
-    left:0px;
+    left:-20px;
   }
 label{
   display: none;
@@ -89,6 +93,7 @@ li{
     display: block;
     padding-bottom:30px;
     font-size: 20px;
+    margin-top:30px;
     
   }
   .imgd img{
@@ -117,9 +122,15 @@ li{
     margin-right:10px;
     font-size:20px;
   }
+  .imgd{
+    margin-left:10px;
+  }
   .imgd img{
     height: 80px;
     width: 200px;
+  }
+  #null{
+    display:none;
   }
   
   
@@ -144,12 +155,12 @@ function home() {
       <input type="checkbox"   id="chk" value="" />
             <label htmlFor="chk">Menu</label>
         <ul>
-          <li><a>Premium</a></li>
-          <li><a>Help</a></li>
-          <li><a>Download</a></li>
-          <li>|</li>
-          <li><a>Sign up</a></li>
-          <li><a>Log in</a></li>
+          <li><a href='#'>Premium</a></li>
+          <li><a href='#'>Help</a></li>
+          <li><a href='#'>Download</a></li>
+          <li id='null'>|</li>
+          <li><a href='#'>Sign up</a></li>
+          <li><a href='#'>Log in</a></li>
           </ul>
             </div> </nav>
         <div className="inside">
@@ -157,6 +168,7 @@ function home() {
           <h2>Count</h2></div>
          <h2 id="count">{value}</h2>
          <div className="butn"><button onClick={()=>{setValue(value+1)}}>Click</button></div>
+         <div className="butn"><button onClick={()=>{setValue(0)}}>Reset</button></div>
          </div></div>
          
       

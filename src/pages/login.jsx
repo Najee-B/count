@@ -2,12 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 const Container=styled.div`
  background-color: rgb(3, 117, 158);
-    margin-top: 0px;
+    
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content:center;
 h1{
     font-weight: lighter;
 }
@@ -68,28 +67,34 @@ p{
 
 }
 @media only screen and (max-width:600px) {
+    padding:0px;
     .content{
-        height:400px;
-        width:240px;
+        height:500px;
+        width:320px;
         padding-top: 0px;
         margin:auto;
+
     }
     form{
-        width:200px;
+        width:265px;
     }
     .in{
-        width:170px;
+        width:240px;
         height: 25px;
     }
     h1{
         margin-top:20px;
         font-size:30px;
     }
+    #lb{
+        margin-left:0px;
+    }
     p{
         font-size: 10px;
         width:150px;
         margin-top:20px;
     }
+    
 }
 
 
