@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 const Container=styled.div`
- background-color: rgb(3, 117, 158);
-    
-    width: 100%;
+    background-color: #03759e;
     height: 100vh;
     display: flex;
     justify-content:center;
@@ -68,6 +66,7 @@ p{
 }
 @media only screen and (max-width:600px) {
     padding:0px;
+    width:100%;
     .content{
         height:500px;
         width:320px;
