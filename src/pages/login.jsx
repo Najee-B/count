@@ -66,7 +66,7 @@ p{
 }
 @media only screen and (max-width:600px) {
     padding:0px;
-    width:100%;
+    margin:0px;
     .content{
         height:500px;
         width:320px;
